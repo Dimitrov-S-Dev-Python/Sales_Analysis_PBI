@@ -29,7 +29,7 @@ SELECT
 FROM
 	FactInternetSales
 WHERE
-	LEFT (OrderDateKey, 4) >= YEAR(GETDATE()) -2 -- ensure we always only bring two years of the date from extraction
+	LEFT (OrderDateKey, 4) >= YEAR(GETDATE()) - 2 -- ensure we always only bring two years of the date from extraction
 
 ORDER BY
 	OrderDateKey ASC
