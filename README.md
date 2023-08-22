@@ -13,3 +13,6 @@
 [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
 
 ---
+[Update SQL Data Script](https://powerbi.microsoft.com/en-us/desktop/)
+
+---
