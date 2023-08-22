@@ -13,6 +13,6 @@
 [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
 
 ---
-[Update SQL Data Script](https://powerbi.microsoft.com/en-us/desktop/)
+[Update SQL Data Script](https://github.com/Dimitrov-S-Dev-Python/Sales_Analysis_PBI/blob/master/Update_Database.sql)
 
 ---
