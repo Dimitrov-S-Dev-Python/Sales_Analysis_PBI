@@ -1,39 +1,40 @@
 -- Cleansed DIM_Customers Table --
 SELECT
-  c.customerkey AS CustomerKey,
-  --      ,[GeographyKey]
-  --      ,[CustomerAlternateKey]
-  --      ,[Title]
-  c.firstname AS [First Name],
-  --      ,[MiddleName]
-  c.lastname AS [Last Name],
-  c.firstname + ' ' + lastname AS [Full Name],
-  -- Combined First and Last Name
-  --      ,[NameStyle]
-  --      ,[BirthDate]
-  --      ,[MaritalStatus]
-  --      ,[Suffix]
-  CASE c.gender WHEN 'M' THEN 'Male' WHEN 'F' THEN 'Female' END AS Gender,
-  --      ,[EmailAddress]
-  --      ,[YearlyIncome]
-  --      ,[TotalChildren]
-  --      ,[NumberChildrenAtHome]
-  --      ,[EnglishEducation]
-  --      ,[SpanishEducation]
-  --      ,[FrenchEducation]
-  --      ,[EnglishOccupation]
-  --      ,[SpanishOccupation]
-  --      ,[FrenchOccupation]
-  --      ,[HouseOwnerFlag]
-  --      ,[NumberCarsOwned]
-  --      ,[AddressLine1]
-  --      ,[AddressLine2]
-  --      ,[Phone]
-  c.datefirstpurchase AS DateFirstPurchase,
-  --      ,[CommuteDistance]
-  g.city AS [Customer City] -- Joined in Customer City from Geography Table
+c.CustomerKey AS CustomerKey,
+	--,[GeographyKey]
+	--,[CustomerAlternateKey]
+	--,[Title]
+c. FirstName AS [First Name],
+	--,[MiddleName]
+c.LastName AS [Last Name],
+c.FirstName + ' ' + c.LastName AS [Full Name],
+	-- Combined First and Last Name
+	--,[NameStyle]
+	--,[BirthDate]
+	--,[MaritalStatus]
+	--,[Suffix]
+CASE c.Gender WHEN 'M' THEN 'Male' WHEN 'F' THEN 'Female' END AS Gender,
+	--,[Gender]
+	--,[EmailAddress]
+	--,[YearlyIncome]
+	--,[TotalChildren]
+	--,[NumberChildrenAtHome]
+	--,[EnglishEducation]
+	--,[SpanishEducation]
+	--,[FrenchEducation]
+	--,[EnglishOccupation]
+	--,[SpanishOccupation]
+	--,[FrenchOccupation]
+	--,[HouseOwnerFlag]
+	--,[NumberCarsOwned]
+	--,[AddressLine1]
+	--,[AddressLine2]
+	--,[Phone]
+c.DateFirstPurchase AS DateFirstPurchase,
+	--,[CommuteDistance]
+g.city AS [Customer City] -- joined in Customer city from Geography table
 FROM
-  [AdventureWorksDW2019].[dbo].[DimCustomer] as c
-  LEFT JOIN dbo.dimgeography AS g ON g.geographykey = c.geographykey
+	DimCustomer AS c
+	JOIN DimGeography AS g ON c.GeographyKey = g.GeographyKey
 ORDER BY
-  CustomerKey ASC -- Ordered List by CustomerKey
+	CustomerKey -- Order List by CustomerKey

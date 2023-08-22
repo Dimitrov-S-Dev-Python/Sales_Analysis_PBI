@@ -40,7 +40,7 @@ p.EnglishDescription AS [Product Description],
 ISNULL (p.Status, 'Outdated') AS [Product Status]
 FROM
 	DimProduct AS p
-	LEFT JOIN DimProductSubcategory AS ps ON ps.ProductSubcategoryKey = p.ProductSubcategoryKey
-	LEFT JOIN DimProductCategory AS pc ON ps.ProductCategoryKey = pc.ProductCategoryKey
+	RIGHT JOIN DimProductSubcategory AS ps ON ps.ProductSubcategoryKey = p.ProductSubcategoryKey
+	RIGHT JOIN DimProductCategory AS pc ON ps.ProductCategoryKey = pc.ProductCategoryKey
 ORDER BY
 	p.ProductKey
