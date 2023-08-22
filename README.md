@@ -13,7 +13,7 @@
 [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
 
 ---
-[Update SQL Data Script](https://github.com/Dimitrov-S-Dev-Python/Sales_Analysis_PBI/blob/master/Update_Database.sql)
+[Update SQL Data Script](https://github.com/Dimitrov-S-Dev-Python/Sales_Analysis_PBI/tree/master/1.Set_Up)
 
 ---
 [Sent Over Data - Sales Budget](https://github.com/Dimitrov-S-Dev-Python/Sales_Analysis_PBI/blob/master/1.Set_Up/SalesBudget.xlsx)
