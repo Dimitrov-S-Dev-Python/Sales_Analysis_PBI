@@ -1,11 +1,11 @@
 -- Cleansed DIM_Customers Table --
 SELECT
-c.CustomerKey AS CustomerKey,
-	--,[GeographyKey]
+c.CustomerKey,
+	--[GeographyKey]
 	--,[CustomerAlternateKey]
 	--,[Title]
 c. FirstName AS [First Name],
-	--,[MiddleName]
+	--[MiddleName]
 c.LastName AS [Last Name],
 c.FirstName + ' ' + c.LastName AS [Full Name],
 	-- Combined First and Last Name
@@ -14,7 +14,7 @@ c.FirstName + ' ' + c.LastName AS [Full Name],
 	--,[MaritalStatus]
 	--,[Suffix]
 CASE c.Gender WHEN 'M' THEN 'Male' WHEN 'F' THEN 'Female' END AS Gender,
-	--,[Gender]
+	--[Gender]
 	--,[EmailAddress]
 	--,[YearlyIncome]
 	--,[TotalChildren]
@@ -30,8 +30,8 @@ CASE c.Gender WHEN 'M' THEN 'Male' WHEN 'F' THEN 'Female' END AS Gender,
 	--,[AddressLine1]
 	--,[AddressLine2]
 	--,[Phone]
-c.DateFirstPurchase AS DateFirstPurchase,
-	--,[CommuteDistance]
+c.DateFirstPurchase,
+	--[CommuteDistance]
 g.city AS [Customer City] -- joined in Customer city from Geography table
 FROM
 	DimCustomer AS c
