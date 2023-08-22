@@ -23,4 +23,5 @@ CalendarYear AS Year
 FROM
   DimDate
 WHERE
-	CalendarYear >= 2019
+	CalendarYear BETWEEN 2019 AND 2021
+
