@@ -16,7 +16,7 @@
 [Update SQL Data Script](https://github.com/Dimitrov-S-Dev-Python/Sales_Analysis_PBI/blob/master/1.Set%20Up/Update_Database.sql)
 
 ---
-[Sent Over Data - Sales Budget]https://github.com/Dimitrov-S-Dev-Python/Sales_Analysis_PBI/blob/master/1.Set%20Up/SalesBudget.xlsx)
+[Sent Over Data - Sales Budget](https://github.com/Dimitrov-S-Dev-Python/Sales_Analysis_PBI/blob/master/1.Set%20Up/SalesBudget.xlsx)
 
 ---
 ## 2.Business Request & Demand Overview
